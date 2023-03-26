@@ -1,0 +1,464 @@
+/* タグcss */
+span {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* ヘッダーCSS */
+.header {
+  width: 100%;
+  height: 64px;
+  gap: 24px;
+  height: 64px;
+  padding: 0px 24px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr minmax(0px, 528px) 1fr;
+  background-color: rgb(255, 255, 255);
+}
+
+.logo {
+  margin-left: 20px;
+  width: 20px;
+  height: 20x;
+}
+
+.Search {
+  font-size: 14px;
+  width: 528px;
+  height: 40px;
+  border: 1px solid #f1f1f1;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  padding-right: 16px;
+  padding-left: 36px;
+
+
+}
+.Search::before {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 8px;
+  color: #999;
+}
+.Search:focus {
+  outline: none;
+}
+
+.SearchField{
+  margin: 5px auto 5px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.postImage {
+  margin-top: 10px;
+  margin-right: 20px;
+  float: right;
+}
+
+.postMig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 37px;
+  position: relative;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin: 5px 45px 0 150px;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height: 1.3;
+  text-align: left;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+.postMig:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  margin-top: -6px;
+}
+
+/* button */
+button {
+  color: #fff;
+  background-color: #44affd;
+  width: 90px;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+
+label {
+  font-weight: bold;
+  font-family: Arial;
+  margin: 0px auto 12px 270px;
+}
+.imgButton {
+  margin: 80px 0px 30px 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  border-radius: 0px;
+  width: 110px;
+  height: 40px;
+  font-weight: bold;
+  border-top: 4px solid #2ac2f0;
+  border-right: 0px solid #333333;
+  border-left: 0px solid #333333;
+  border-bottom: 0px solid #333333;
+  background-color: #ffffff;
+}
+/* home */
+.imageList {
+  width: 1080px;
+  height: 100%;
+  margin: 10px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imageList img {
+  width: 184px;
+  height: 184px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.imageList img:hover {
+  opacity: 70%;
+}
+
+.PageNation{
+  position: absolute;
+  top: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .PageNationBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #878787;
+    font-size: 12px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: #ffffff;
+  }
+  
+  .PageNationBtn:hover {
+    opacity: .7;
+    background-color: #EAEAEA;
+  }
+
+
+/* イラストdiv */
+.artDiv {
+  width: 184px;
+  height: 238px;
+  margin-left: 24px;
+  text-align: left;
+}
+
+.artworkName {
+  width: 184px;
+  height: 22px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.artworkUsername {
+  width: 184px;
+  height: 24px;
+}
+
+/* 画像詳細ページ */
+.ArtWorksbody {
+  box-sizing: border-box;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+}
+.ArtworksBox {
+  width: 60%;
+  height: 100%;
+  margin: 50px auto 0 auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+  display: flex;
+}
+
+.WhiteGap {
+  height: 80px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* 画像 */
+.Artworks {
+  width: 60%;
+}
+
+.Artworks img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.ArtworksButton {
+  width: 50%;
+  margin: 10px auto 30px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.deleteButton {
+  background-color: #ff0000;
+}
+
+.ImageNameField {
+  margin-top: 2px;
+  text-align: left;
+  padding: 20px 0 0 20px;
+}
+
+.ImageCaptionField {
+  padding: 5px 0 0 20px;
+  font-family: "Arial";
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  width: auto;
+  height: auto;
+  color: #686868;
+}
+
+/* 画像詳細ページ.コメント */
+.comment {
+  width: 40%;
+  margin-left: 40px;
+  text-align: left;
+  list-style: none;
+}
+
+.comment ul {
+  height: 280px;
+  overflow-y: scroll;
+}
+
+.commentTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.comment li {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.submitComment {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.submitImage {
+  width: 60%;
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+
+.submitImage input {
+  width: 50%;
+  border: 1px solid #ccc;
+  margin: 50px;
+}
+
+.backButton {
+  margin-top: 30px;
+}
+
+/*画像投稿ページ*/
+
+.postImage {
+  justify-content: center;
+  margin-left: 1px;
+}
+
+#preview {
+  margin: 0 auto;
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  border: none;
+  display: flex;
+  margin-top: 50px;
+}
+
+
+.postImageName {
+  width: 550px;
+  height: 35px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 5px auto;
+  background-color: #ebebeb;
+  border: none;
+}
+.postImageName:focus {
+  outline: none;
+}
+
+.TitleCount{
+  position: absolute;
+  right: 2px;
+  width: 50px;
+  font-size: 12px;
+  color: #686868;
+}
+
+.postImageCaption {
+  width: 550px;
+  height: 200px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px auto;
+  background-color: #ebebeb;
+  border: none;
+}
+.postImageCaption:focus {
+  outline: none;
+}
+
+.CaptionCount {
+  position: absolute;
+  top: 180px;
+  right: 15px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #686868;
+  font-size: 12px;
+}
+
+
+.fileSelect {
+  background: #44affd;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 250px;
+  padding: 10px 25px;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+  font-size: 15px;
+  font-weight: 500;
+  width: 250px;
+  height: auto;
+}
+.fileSelect:before {
+  content: "\f15b";
+  position: relative;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.postImageButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* SearchRes */
+.SearchRes{
+  width: auto;
+  height: auto;
+  margin-top: 50px;
+}
+
+.imageList2 {
+  width: 1080px;
+  height: 100%;
+  margin: 10px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.imageList2 img {
+  width: 184px;
+  height: 184px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.imageList2 img:hover {
+  opacity: 70%;
+}
